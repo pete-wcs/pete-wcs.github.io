@@ -1,0 +1,17 @@
+#main-banner {
+    background-image: url(chew-lake.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.align-clear {
+    clear: both;
+}
