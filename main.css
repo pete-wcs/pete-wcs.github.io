@@ -2,6 +2,7 @@
     background-image: url(chew-lake.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 15px;
 }
 
 .align-left {
@@ -18,11 +19,15 @@
 
 .info-box {
     margin-bottom: 15px;
-
-
 }
 
 .info-box .card {
     height: 100%;
     background-color: rgba(196, 200, 145, 0.25);
+}
+
+.image-right {
+    float: right;
+    width: 350px;
+    margin: 10px;
 }
