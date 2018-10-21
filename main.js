@@ -10,13 +10,13 @@ $(document).on('submit', '#feedback-form', function(event) {
     var message = '';
     $(this).find('.feedback-item').each(function (){
         var key = $(this).find('label').text();
-        var value = $(this).find('input').val();
-        message += key + ': ' + value + '\r\n';
+        var value = $(this).find('.form-control').val();
+        message += key + ': ' + value + '\r\n\r\n';
     });
 
     var data = {
         "access_token": "6w6a78zel2ca6iawom3p68qb",
-        'subject': 'Feedback received',
+        'subject': 'Feedback received from ' + $('#name').val(),
         'text': message
     };
 
