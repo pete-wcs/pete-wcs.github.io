@@ -1,27 +1,11 @@
-function onSuccess() {
-    var submitButton = $('#submit-feedback');
-    submitButton.prop('disabled', false);
-
-    var status = $('#feedback-status');
-    status.html('Your feedback was submitted successfully');
-}
-
-function onError(error) {
-    var submitButton = $('#submit-feedback');
-    submitButton.prop('disabled', false);
-
-    var status = $('#feedback-status');
-    status.html('There was an error submitting your feedback - ' + error);
-}
-
 $(document).on('submit', '#feedback-form', function(event) {
     event.preventDefault();
 
     var submitButton = $('#submit-feedback');
-    submitButton.prop('disabled', true);
+    submitButton.hide();
 
     var status = $('#feedback-status');
-    status.html('Submitting feedback....');
+    status.html('<div class="alert alert-light">Submitting feedback....</div>');
 
     var message = '';
     $(this).find('.feedback-item').each(function (){
@@ -41,12 +25,11 @@ $(document).on('submit', '#feedback-form', function(event) {
         url: 'https://postmail.invotes.com/send',
         data: data,
         success: function() {
-            submitButton.prop('disabled', false);
-            status.html('Your feedback was submitted successfully');
+            status.html('<div class="alert alert-success">Your feedback was submitted successfully</div>');
         },
         error: function(error) {
-            submitButton.prop('disabled', false);
-            status.html('There was an error submitting your feedback - ' + error);
+            submitButton.show();
+            status.html('<div class="alert alert-danger">There was an error submitting your feedback - ' + error + '</div>');
         }
     });
 
