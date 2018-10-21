@@ -15,7 +15,7 @@ $(document).on('submit', '#feedback-form', function(event) {
     });
 
     var data = {
-        "access_token": "6w6a78zel2ca6iawom3p68qb",
+        "access_token": "t1f5rtwqlp1l2dneu4p9ow6v",
         'subject': 'Feedback received from ' + $('#name').val(),
         'text': message
     };
