@@ -42,6 +42,14 @@ h1 {
     padding: 10px;
 }
 
+.inline-input {
+    width: 50px;
+}
+
+.inline-input-wider {
+    width: 100px;
+}
+
 /** MAP */
 
 .mapouter{text-align:right;height:300px;width:300px;}

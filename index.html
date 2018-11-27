@@ -29,15 +29,33 @@
             <div class="accordion" id="news">
                 <!-- NEWS ITEM -->
                 <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#newsFive" aria-expanded="true" aria-controls="newsFive">
+                                27th Nov 2018 - Flyer
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="newsFive" class="collapse show" aria-labelledby="headingFive" data-parent="#news">
+                        <div class="card-body">
+                            A very informative flyer has been produced that will be posted to every house in the parish, so please look
+                            out for it or you can download it now by <a href="Community%20Shop.pdf">clicking here</a>.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEWS ITEM -->
+                <div class="card">
                     <div class="card-header" id="headingFour">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#newsFour" aria-expanded="true" aria-controls="newsFour">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#newsFour" aria-expanded="true" aria-controls="newsFour">
                                 5th Nov 2018 - Open Information Morning
                             </button>
                         </h5>
                     </div>
 
-                    <div id="newsFour" class="collapse show" aria-labelledby="headingFour" data-parent="#news">
+                    <div id="newsFour" class="collapse" aria-labelledby="headingFour" data-parent="#news">
                         <div class="card-body">
                             The Steering Group of the Villages Community Shop are holding an open morning,
                             outside the shop, on <span style="font-weight: bold; text-decoration: underline">Saturday 10th November</span>, from 8:30 until 13:00.
@@ -109,124 +127,108 @@
         </div>
 
         <div class="col-md-8">
-            <h2>Have your say</h2>
+            <h2>Pledge Your Support and Help Save Our Shop and Post Office</h2>
             <div>
                 <p>
                     <img src="old_shop.png" class="image-right"/>
-                    The Winford village shop proprietor plans to cease providing this facility very soon.
-                    The community, at a recent 3 village meeting, confirmed that it is very important that
-                    this amenity remain open for our residents’ convenience, not forgetting passing trade.
-                    In order for this project to succeed, it will have to be run by volunteers from within
-                    the village communities - this is where you come in, either as a volunteer,
-                    an investor or just with GOOD ideas.  All are vital to the success of this venture.
-                    Please would you complete the form below to help us realise the priorities
-                    - <span style="font-style: italic;">The Winford Community Shop Steering Committee.</span>
+                    Look out for <a href="Community%20Shop.pdf">this flyer</a> coming through your letter box over
+                    the next couple of weeks inviting you to pledge to buy shares in the proposed community shop and
+                    to pledge to volunteer. Shares cost £25.00 each and we need as many investors as possible. We
+                    also need lots of volunteers especially people who can work in the shop for an hour or two each
+                    week or from time to time. You can make your pledge here by completing and submitting the online
+                    form by December 16th 2018.
                 </p>
             </div>
 
             <form id="feedback-form" action="#">
-                <h5>
-                    How important are the following to you?
-                </h5>
 
-                <div class="form-group row feedback-item">
-                    <label for="essentials" class="col-sm-4 col-form-label">Essentials (milk, bread, etc)</label>
-                    <div class="col-sm-8">
-                        <select class="form-control" id="essentials" name="essentials">
-                            <option value="Not important">Not important</option>
-                            <option value="Somewhat important">Somewhat important</option>
-                            <option value="Somewhat important">Very important</option>
-                        </select>
+
+                <div class="alert alert-primary">
+                    <h3>
+                        YES, I want to support the shop, please count me in.
+                    </h3>
+
+                    <div style="text-align: center;">
+                        I wish to buy <span class="feedback-item"><label style="display: none">Number of shares</label><input class="inline-input feedback-input" type="text" id="number-of-shares" name="number-of-shares"></span> share(s) at £25 each to the value
+                        of £ <span class="feedback-item"><label style="display: none">Value of shares</label><input class="inline-input-wider feedback-input" type="text" id="value-of-shares" name="value-of-shares"></span>
                     </div>
+
+                    <div style="font-weight: bold; text-align: center;"> - OR - </div>
+
+                    <div style="text-align: center;">
+                        I don’t plan to buy shares but I will make a donation of £ <span class="feedback-item"><label style="display: none">Donation</label><input class="inline-input-wider feedback-input" type="text" id="donation" name="donation"></span>
+                    </div>
+
+                    <br/>
+
+                    <div class="form-group row feedback-item">
+                        <label for="name" class="col-sm-4 col-form-label">Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control feedback-input" id="name" name="name" placeholder="Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row feedback-item">
+                        <label for="name" class="col-sm-4 col-form-label">Address</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control feedback-input" id="address" name="address" placeholder="Address">
+                        </div>
+                    </div>
+
+                    <div class="form-group row feedback-item">
+                        <label for="email" class="col-sm-4 col-form-label">Email address</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control feedback-input" id="email" name="email" placeholder="Email address">
+                        </div>
+                    </div>
+
+                    <div class="form-group row feedback-item">
+                        <label for="email" class="col-sm-4 col-form-label">Phone number</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control feedback-input" id="phone-number" name="phone-number" placeholder="Phone number">
+                        </div>
+                    </div>
+
+                    <div class="form-group row feedback-item">
+                        <label for="receive-email" class="col-sm-10 col-form-label">I am happy to receive the share offer prospectus and application by email</label>
+                        <div class="col-sm-2">
+                            <select class="form-control feedback-input" id="receive-email" name="receive-email" required>
+                                <option value="">Choose...</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row feedback-item">
+                        <label for="help-as-volunteer" class="col-sm-10 col-form-label">I would like to help as a volunteer</label>
+                        <div class="col-sm-2">
+                            <select class="form-control feedback-input" id="help-as-volunteer" name="help-as-volunteer" required>
+                                <option value="">Choose...</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8">
+                            <button type="submit" class="btn btn-primary" id="submit-feedback">Submit your feedback</button>
+                            <div id="feedback-status"></div>
+                            <br/>
+                            <p>Please note that your contact details will only be used to communicate with you on shop
+                                business. It will not be supplied to third parties. </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+                    <p style="font-size: small;">Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
                 </div>
 
-                <div class="form-group row feedback-item">
-                    <label for="fruitveg" class="col-sm-4 col-form-label">Fresh fruit and veg</label>
-                    <div class="col-sm-8">
-                        <select class="form-control" id="fruitveg" name="fruitveg">
-                            <option value="Not important">Not important</option>
-                            <option value="Somewhat important">Somewhat important</option>
-                            <option value="Somewhat important">Very important</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row feedback-item">
-                    <label for="alcohol" class="col-sm-4 col-form-label">Alcoholic beverages</label>
-                    <div class="col-sm-8">
-                        <select class="form-control" id="alcohol" name="alcohol">
-                            <option value="Not important">Not important</option>
-                            <option value="Somewhat important">Somewhat important</option>
-                            <option value="Somewhat important">Very important</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row feedback-item">
-                    <label for="toiletries" class="col-sm-4 col-form-label">Toiletries and non-prescription medications</label>
-                    <div class="col-sm-8">
-                        <select class="form-control" id="toiletries" name="toiletries">
-                            <option value="Not important">Not important</option>
-                            <option value="Somewhat important">Somewhat important</option>
-                            <option value="Somewhat important">Very important</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row feedback-item">
-                    <label for="newspapers" class="col-sm-4 col-form-label">Newspapers and magazines</label>
-                    <div class="col-sm-8">
-                        <select class="form-control" id="newspapers" name="newspapers">
-                            <option value="Not important">Not important</option>
-                            <option value="Somewhat important">Somewhat important</option>
-                            <option value="Somewhat important">Very important</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group row feedback-item">
-                    <label for="postoffice" class="col-sm-4 col-form-label">Post office services</label>
-                    <div class="col-sm-8">
-                        <select class="form-control" id="postoffice" name="postoffice">
-                            <option value="Not important">Not important</option>
-                            <option value="Somewhat important">Somewhat important</option>
-                            <option value="Somewhat important">Very important</option>
-                        </select>
-                    </div>
-                </div>
-
-
-                <div class="form-group row feedback-item">
-                    <label for="name" class="col-sm-4 col-form-label">Your Name</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                </div>
-
-                <div class="form-group row feedback-item">
-                    <label for="email" class="col-sm-4 col-form-label">Your Email Address</label>
-                    <div class="col-sm-8">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address">
-                    </div>
-                </div>
-
-                <div class="form-group row feedback-item">
-                    <label for="comments" class="col-sm-4 col-form-label">Any other comments</label>
-                    <div class="col-sm-8">
-                        <textarea class="form-control" id="comments" name="comments" placeholder="Any other comments"></textarea>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-8">
-                        <button type="submit" class="btn btn-primary" id="submit-feedback">Submit your feedback</button>
-                        <div id="feedback-status"></div>
-                    </div>
-                </div>
-
-                <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
-                <p style="font-size: small;">Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
             </form>
         </div>
     </div>

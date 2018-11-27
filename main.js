@@ -10,7 +10,7 @@ $(document).on('submit', '#feedback-form', function(event) {
     var message = '';
     $(this).find('.feedback-item').each(function (){
         var key = $(this).find('label').text();
-        var value = $(this).find('.form-control').val();
+        var value = $(this).find('.feedback-input').val();
         message += key + ': ' + value + '\r\n\r\n';
     });
 
