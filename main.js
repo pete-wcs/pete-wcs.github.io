@@ -16,7 +16,7 @@ $(document).on('submit', '#feedback-form', function(event) {
 
     var data = {
         "access_token": "t1f5rtwqlp1l2dneu4p9ow6v",
-        'subject': 'Feedback received from ' + $('#name').val(),
+        'subject': 'Pledge received from ' + $('#name').val(),
         'text': message
     };
 
