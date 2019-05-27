@@ -95,20 +95,20 @@ a {
 }
 
 /** MAP */
-.mapwrapper {
-    display: flex;
-    justify-content: center;
-}
+/*.mapwrapper {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+/*}*/
 
-.mapouter {
-    text-align: right;
-    height: 300px;
-    width: 300px;
-}
+/*.mapouter {*/
+    /*text-align: right;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+/*}*/
 
-.gmap_canvas {
-    overflow: hidden;
-    background: none!important;
-    height: 300px;
-    width: 300px;
-}
+/*.gmap_canvas {*/
+    /*overflow: hidden;*/
+    /*background: none !important;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+/*}*/
