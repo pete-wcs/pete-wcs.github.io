@@ -8,11 +8,46 @@ h1 {
     text-shadow: 4px 4px 4px #aaa;
 }
 
-#main-banner {
-    background-image: url(chew-lake.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 15px;
+a {
+    color: white !important;
+}
+
+.sectionTitle {
+    background-color: white;
+}
+
+.sectionA {
+    background-color: #25367e;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sectionB {
+    background-color: #00a6d3;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sectionC {
+    background-color: #25367e;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info-box .card {
+    background-color: #00a6d3 !important;
+    color: white;
+}
+
+.card-header {
+    background-color: #00ceffcc !important;
+}
+
+.card-footer {
+    background-color: #00ceffcc !important;
 }
 
 .logo-wrapper {
@@ -60,6 +95,20 @@ h1 {
 }
 
 /** MAP */
+.mapwrapper {
+    display: flex;
+    justify-content: center;
+}
 
-.mapouter{text-align:right;height:300px;width:300px;}
-.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}
+.mapouter {
+    text-align: right;
+    height: 300px;
+    width: 300px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 300px;
+    width: 300px;
+}
