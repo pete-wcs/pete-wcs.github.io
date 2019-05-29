@@ -12,6 +12,10 @@ a {
     color: white !important;
 }
 
+button {
+    color: white !important;
+}
+
 .sectionTitle {
     background-color: white;
 }
@@ -37,7 +41,7 @@ a {
     padding-bottom: 20px;
 }
 
-.info-box .card {
+.card {
     background-color: #00a6d3 !important;
     color: white;
 }
@@ -93,22 +97,3 @@ a {
 .inline-input-wider {
     width: 100px;
 }
-
-/** MAP */
-/*.mapwrapper {*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-/*}*/
-
-/*.mapouter {*/
-    /*text-align: right;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-/*}*/
-
-/*.gmap_canvas {*/
-    /*overflow: hidden;*/
-    /*background: none !important;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-/*}*/
