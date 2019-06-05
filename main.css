@@ -95,3 +95,7 @@ img {
 .inline-input-wider {
     width: 100px;
 }
+
+.stock-images div {
+    padding: 15px;
+}
