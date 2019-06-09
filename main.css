@@ -99,3 +99,24 @@ img {
 .stock-images div {
     padding: 15px;
 }
+
+.footer {
+    padding: 10px;
+}
+
+.footer a {
+    color: #25367e !important;
+}
+
+.twitter-icon {
+    fill: #25367e;
+}
+
+.email-icon {
+    fill: #25367e;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+}
