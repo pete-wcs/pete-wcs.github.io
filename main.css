@@ -120,3 +120,9 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
+.homepage-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
