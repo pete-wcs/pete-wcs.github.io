@@ -126,3 +126,26 @@ img {
     height: auto;
     margin-bottom: 20px;
 }
+
+.xmas-opening {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .xmas-opening {
+        flex-direction: column;
+    }
+
+    .xmas-opening > div {
+        margin-bottom: 30px;
+    }
+}
+
+.xmas-opening .align-left {
+    margin-right: 20px;
+}
+
+.xmas-opening .align-right {
+    margin-left: 20px;
+}
