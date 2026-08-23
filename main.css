@@ -10,6 +10,7 @@ h1 {
 
 a {
     color: white !important;
+    text-decoration: underline;
 }
 
 button {
